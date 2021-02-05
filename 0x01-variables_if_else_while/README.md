@@ -2,6 +2,7 @@
 
 ## Learning C
 
-- Why C programming is awesome
-- What happens when you type gcc main.c
-
+- C - Variables
+- if
+- else
+- while
