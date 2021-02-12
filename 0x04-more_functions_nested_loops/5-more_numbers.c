@@ -1,18 +1,23 @@
 #include "holberton.h"
-
 /**
- *print_numbers - print the numbers 0 to 9
- *
- *Return: void
+ *more_numbers - prints numbers from 0 to 14
+ *Return: 0
  **/
-void print_numbers(void)
+void more_numbers(void)
 {
-	char n = '0';
+	int num;
+	int num2;
 
-	while (n <= '9')
+	for (num = 0; num <= 9; num++)
 	{
-	_putchar (n);
-	n++;
-	}
-	_putchar ('\n');
+		for (num2 = 0; num2 <= 14; num2++)
+		{
+		if (num2 >= 10)
+		{
+		_putchar((num2 / 10) + '0');
+		}
+		_putchar((num2 % 10) + '0');
+		}
+	_putchar('\n');
+}
 }
