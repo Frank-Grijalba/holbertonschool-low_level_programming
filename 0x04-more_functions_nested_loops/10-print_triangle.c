@@ -7,32 +7,27 @@
  **/
 void print_triangle(int size)
 {
-
 	int enter, limite;
 	int contmenos = size;
 
 	for (enter = 0; enter < size; enter++)
 	{
-		if (size > 0)
-		{
 		for (limite = 0; limite < size; limite++)
 		{
 			if (limite < contmenos - 1)
 			{
-				_putchar (' ');
+			_putchar (' ');
 			}
 			else
 			{
-				_putchar ('#');
+			_putchar ('#');
 			}
 		}
-		_putchar('\n');
+		_putchar ('\n');
 		contmenos--;
 	}
-	else
-	{
+		if (size < 1)
+		{
 		_putchar ('\n');
-	}
-	}
-	_putchar ('\n');
+		}
 }
