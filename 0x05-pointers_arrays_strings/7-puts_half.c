@@ -19,7 +19,7 @@ void puts_half(char *str)
 	{
 		div = (length - 1) / 2;
 	}
-	else
+	else if ((length % 2) == 0)
 	{
 		div = length / 2;
 	}
