@@ -1,4 +1,4 @@
-#include "holberton"
+#include "holberton.h"
 
 /**
  * _strncat - writes the character c to stdout
@@ -6,7 +6,7 @@
  * @src: the string source
  * @n: number of characters to go through
  * Return: dest.
- * /
+ **/
 char *_strncat(char *dest, char *src, int n)
 {
 	int a = 0, b = 0, c = 0;
