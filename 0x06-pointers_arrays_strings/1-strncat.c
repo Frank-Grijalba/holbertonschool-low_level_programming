@@ -1,25 +1,33 @@
-#include <stdio.h>
-#include "holberton.h"
-/**
- * _strcat - function that concatenates two strings
- * @dest: String to destiny
- * @src : String Source
- * Return: Char dest
- */
-char *_strcat(char *dest, char *src)
-{
-	int i = 0, j = 0;
+#include "holberton"
 
-	while (dest[i] != '\0')
+/**
+ * _strncat - writes the character c to stdout
+ * @dest: The string destin
+ * @src: the string source
+ * @n: number of characters to go through
+ * Return: dest.
+ * /
+char *_strncat(char *dest, char *src, int n)
+{
+	int a = 0, b = 0, c = 0;
+
+	while (dest[a] != '\0')
 	{
-		i++;
+		a++;
 	}
-	while (src[j] != '\0')
+	while (src[b] != '\0')
 	{
-		dest[i] = src[j];
-		i++;
-		j++;
+		b++;
 	}
-	dest[i] = '\0';
+	if (n > b)
+	{
+		n = b;
+	}
+	while (c < n)
+	{
+		dest[a] = src[c];
+		c++;
+		a++;
+	}
 	return (dest);
 }
