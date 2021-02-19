@@ -6,22 +6,18 @@
  * @n: the longth of the array
  * Return: nothing
  **/
+
 void reverse_array(int *a, int n)
 {
-	int i;
+	int i, temp;
 
-	i = n - 1;
-	while (i < n && i > -1)
+	i = 0;
+
+	for (i = 0; i < n; i++)
 	{
-		if (i != 0)
-		{
-		printf("%d, ", a[i]);
-		}
-		else
-		{
-		printf("%d", a[i]);
-		}
-		i--;
+		temp = a[n - 1];
+		a[n - 1] = a[i];
+		a[i] = temp;
+		n--;
 	}
-	printf("\n");
 }
