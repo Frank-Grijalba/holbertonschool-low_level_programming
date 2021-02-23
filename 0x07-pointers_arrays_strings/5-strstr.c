@@ -5,7 +5,6 @@
  * compare - sdfdsf
  * @haystack: source string
  * @needle: string being compared
- * 
  *
  * Return: 1 if matches, 0 if not
  **/
@@ -28,8 +27,7 @@ int compare(char *haystack, char *needle)
  * _strstr - sdfdsfds
  * @haystack: source string
  * @needle: substring
- * 
- * Return: pointer to first instance, NULL if not in haystack
+ * *Return: pointer to first instance, NULL if not in haystack
  **/
 
 char *_strstr(char *haystack, char *needle)
