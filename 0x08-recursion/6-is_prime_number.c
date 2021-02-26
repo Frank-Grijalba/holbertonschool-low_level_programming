@@ -1,8 +1,8 @@
 #include "holberton.h"
 /**
  * prime_con - determine if n is a prime
- * @n:
- * @i:
+ * @n: asad
+ * @i: dsad
  *
  * Return: 1(true) , 0(false)
  */
@@ -12,9 +12,9 @@ int prime_con(int n, int i)
 	{
 		return (0);
 	}
-	else if
+	else
 	{
-		(n >= (i + 1) * (i * 1))
+		if (n >= (i + 1) * (i * 1))
 		return (prime_con(n, i + 1));
 	}
 	return (1);
@@ -22,8 +22,8 @@ int prime_con(int n, int i)
 
 /**
  *is_prime_number - determine if n is a prime
- *@n: number to check
- *Return: 1 if prime, 0 if not
+ *@n: nnnnn
+ *Return: 1(true) , 0(false)
  */
 
 int is_prime_number(int n)

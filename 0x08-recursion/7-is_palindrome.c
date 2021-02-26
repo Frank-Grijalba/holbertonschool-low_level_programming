@@ -6,7 +6,7 @@
  * @s: The string to check
  * @n: The size of string -1
  * @i: counter through string
- * 
+ *
  * Return: 1 is palindrome, 0 is not palindrome
  **/
 
@@ -28,7 +28,7 @@ int compare(char *s, int n, int i)
  * is_palindrome - checks if string is a palindrome
  *
  * @s: string to check
- * 
+ *
  * Return: 1 is palindrome, 0 is not palindrome
  **/
 
