@@ -22,7 +22,7 @@ int numcheck(char *s)
  *main - add numbers
  *@argc: argument count
  *@argv: argument vector
- *Return: 1 (because find other symbols in the argv[]), 0 if everythings is O.K.
+ *Return: 1 (because find other symbols in the argv[]) 0 if everythings is O.K
  */
 
 int main(int argc, char **argv)
