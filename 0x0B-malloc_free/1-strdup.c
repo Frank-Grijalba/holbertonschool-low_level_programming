@@ -9,8 +9,8 @@
 char *_strdup(char *str)
 {
 	char *chr;
-	int n;
-	int length = sizeof(str);
+	unsigned int n;
+	unsigned int length = sizeof(str);
 
 	chr = malloc(sizeof(char) * length);
 
