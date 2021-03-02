@@ -4,7 +4,7 @@
 /**
  *_strdup - create a copy of string
  *@str: string to copy
- *Return: pointer to Array, NULL if value is 0
+ *Return: pointer to Array, NULL if string is empty
  */
 char *_strdup(char *str)
 {
@@ -26,7 +26,7 @@ char *_strdup(char *str)
 
 	else
 	{
-		for (n = 0; n <= length; n++)
+		for (n = 0; str[n] != '\0'; n++)
 		{
 			chr[n] = str[n];
 		}
