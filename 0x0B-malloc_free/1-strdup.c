@@ -10,15 +10,18 @@
 char *_strdup(char *str)
 {
 	char *chr;
-	unsigned int n;
-	unsigned int length = sizeof(str);
+	int n;
+	int length = 0;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 
-	chr = malloc(sizeof(char) * length + 1);
+	while (str[length])
+	size++;
+
+	chr = malloc(sizeof(char) * (size + 1));
 
 	if (chr == NULL)
 	{

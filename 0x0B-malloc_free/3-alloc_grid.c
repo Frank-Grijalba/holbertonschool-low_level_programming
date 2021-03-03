@@ -1,6 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
+
 /**
  *alloc_grid - create array of integers
  *@width: width of the grid
@@ -23,9 +23,11 @@ int **alloc_grid(int width, int height)
 	for (x = 0; x < height; x++)
 	{
 		grid[x] = (int *)malloc(width * sizeof(int));
-
 		if (grid[x] == NULL)
 		{
+			for (y = 0; y <= x; y++)
+			free(grid[y]);
+			free(grid);
 			return (NULL);
 		}
 	}
