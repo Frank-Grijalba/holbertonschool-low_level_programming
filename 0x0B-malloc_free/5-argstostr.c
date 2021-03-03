@@ -5,7 +5,6 @@
 /**
  * _strlen - returns the length of the string
  * @s: input string to count
- * 
  * Return: length of string as int
  **/
 int _strlen(char *s)
@@ -20,7 +19,6 @@ int _strlen(char *s)
  * argstostr - concatenates all arguments of program
  * @ac: number of arguments
  * @av: arguments, pointer to strings
- * 
  * Return: pointer to string, NULL if fails
  **/
 char *argstostr(int ac, char **av)
