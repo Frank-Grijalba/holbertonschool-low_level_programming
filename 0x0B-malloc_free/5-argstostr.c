@@ -1,29 +1,59 @@
 #include "holberton.h"
+#include <stdio.h>
 #include <stdlib.h>
-/**
- * *argstostr - concatenates all the arguments
- * @ac: Integer count
- * @av: Array char
- * Return: pointer or null
- */
 
+/**
+ * _strlen - returns the length of the string
+ * @s: input string to count
+ * 
+ * Return: length of string as int
+ **/
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+		;
+	return (i + 1);
+}
+/**
+ * argstostr - concatenates all arguments of program
+ * @ac: number of arguments
+ * @av: arguments, pointer to strings
+ * 
+ * Return: pointer to string, NULL if fails
+ **/
 char *argstostr(int ac, char **av)
 {
-	char *s;
+	char *dest;
+	unsigned int size, i, j, k;
 
-	if (ac == 0 || av == NULL)
+	size = 0;
+	k = 0;
+
+	if (ac <= 0 || av == NULL)
+		return (NULL);
+
+	for (i = 0; i < (unsigned int)ac; i++)
 	{
-		return ('\0');
+		size += _strlen(av[i]);
 	}
 
-	s = malloc(ac * sizeof(char));
+	dest = (char *)malloc((size + 1) * sizeof(char));
 
-	if (s == NULL)
+	if (dest == NULL)
+		return (NULL);
+
+	for (i = 0; i < (unsigned int)ac; i++)
 	{
-		return ('\0');
+		for (j = 0; av[i][j] != '\0'; j++)
+		{
+			dest[k] = av[i][j];
+			k++;
+		}
+		dest[k] = '\n';
+		k++;
 	}
-	else
-	{
-		return (s);
-	}
+	dest[k] = '\0';
+	return (dest);
 }
