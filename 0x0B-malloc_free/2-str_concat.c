@@ -15,9 +15,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int length1 = sizeof(s1);
 	unsigned int length2 = sizeof(s2);
 
-	if (s1 == NULL) 
+	if (s1 == NULL)
 	s1 = "";
-	
+
 	if (s2 == NULL)
 	s2 = "";
 
