@@ -8,7 +8,7 @@
  *@s2: string 2
  *@n: number of bytes that will takes of the second string and then append
  *    to the first string
- *Return: array two dimentions, NULL if fails
+ *Return: char pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -19,10 +19,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int long2 = 0;
 	unsigned int i, j;
 
-	if (s1 == '\0')
+	if (s1 == NULL)
 	s1 = "";
 
-	if (s2 == '\0')
+	if (s2 == NULL)
 	s2 = "";
 
 	while (s1[long1] != '\0')
@@ -36,8 +36,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		str = malloc(sizeof(char) * (long1 + n) + 1);
 
-	if (str == '\0')
-		return (NULL);
+	if (str == NULL)
+		return (0);
 
 	for (i = 0; s1[i] != 0; i++)
 	{	str[i] = s1[i];
