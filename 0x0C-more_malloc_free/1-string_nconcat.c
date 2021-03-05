@@ -6,7 +6,7 @@
  *                 the first n bytes of s2, and null terminated
  *@s1: string 1
  *@s2: string 2
- *@n: number of bytes that will takes of the second string 
+ *@n: number of bytes that will takes of the second string
  *Return: char pointer
  */
 
