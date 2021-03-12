@@ -1,7 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
  *new_dog - new dog user
  *@name: pointer to dog´s name
@@ -9,7 +8,6 @@
  *@owner: pointer to owner´s name
  *Return: new dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int i = 0, j = 0, k;
@@ -49,7 +47,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(newd);
 		return (NULL);
 	}
-
 	for (k = 0; k <= j; k++)
 		newd->owner[k] = owner[k];
 	return (newd);
