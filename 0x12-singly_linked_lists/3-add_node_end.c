@@ -1,5 +1,7 @@
 #include "lists.h"
-
+#include <stdlib.h>
+#include <string.h>
+#include <stdio.h>
 /**
  * add_node_end - Adds a node at the end of a linked list.
  * @head: pointer to the first node of a linked list.
@@ -9,8 +11,8 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-int i = 0;
-while (str[i])
+	int i = 0;
+	while (str[i])
 	i++;
 
 	list_t *newNodo, *temp;
