@@ -8,13 +8,15 @@
  */
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	if(head == NULL)
+	if (head == NULL)
 	{
-		return NULL;
-	}else
+		return (NULL);
+	}
+	else
 	{
 		listint_t *pointer = head;
 		unsigned int pos = 0;
+
 		while (pos < index && pointer->next)
 		{
 			pointer = pointer->next;
@@ -22,8 +24,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		}
 		if (pos != index)
 		{
-			return NULL;
-		}else
+			return (NULL);
+		}
+		else
 		{
 			return (pointer);
 		}
