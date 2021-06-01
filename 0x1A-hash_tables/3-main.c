@@ -35,3 +35,11 @@ int main(void)
 	
 	return (EXIT_SUCCESS);
 }
+// int main(void)
+// {
+// 	int ret;
+
+// 	ret = hash_table_set(NULL, "Holberton", "is cool");
+// 	printf("%d\n", ret);
+// 	return (EXIT_SUCCESS);
+// }
